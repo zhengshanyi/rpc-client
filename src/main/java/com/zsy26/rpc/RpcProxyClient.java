@@ -19,7 +19,6 @@ public class RpcProxyClient {
     * @Date: 2019/6/23 
     */ 
     public <T> T proxyClient(final Class<T> interfaceClass , final String host , final int prot ){
-
        return  (T)Proxy.newProxyInstance(interfaceClass.getClassLoader(),
                 new Class<?>[] {interfaceClass},
                 new RemoteInvocationHandler(host,prot));
