@@ -10,7 +10,6 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 public class App 
 {
     public static void main( String[] args ){
-        //需要一个代理类
 
         //使用spring启动
         ApplicationContext context = new AnnotationConfigApplicationContext(SpringConfig.class);
